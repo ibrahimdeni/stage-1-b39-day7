@@ -40,6 +40,12 @@
         </div>
     </nav>
 
+    {{!-- {{#if isLogin}}
+    <h1>Selamat anda berhasil menambahkan blog baru di halaman home anda</h1>
+    {{else}}
+    <h1>harap, tambahkan blog baru terlebih dahulu</h1>
+    {{/if}} --}}
+
 
     <div class="d-flex justify-content-center align-items-center y">
         <div class="card shadow">
@@ -48,8 +54,8 @@
                     <div class="card-body">
                         <div class="d-flex flex-column">
                             <div class="p-2 mt-2 mb-4">
-                                <h5 class="card-title fs-4 fw-bolder">{{title}}</h5>
-                                <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <h5 class="card-title fs-4 fw-bolder">Hi! Welcome to my hut</h5>
+                                <p class="card-text fs-6 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Tenetur qui
                                     tempore voluptatem, dolore vitae molestias numquam saepe. Explicabo, nihil veniam
                                     iste fugit
@@ -58,9 +64,11 @@
                                 </p>
                             </div>
                             <div class="p-2 mb-5">
-                                <a class="btn rounded-5 bg-dark text-white px-4 btn-sm" href="https://wa.me/6283838787866">Contact</a>
-                                <a class="btn btn-sm" href="https://www.mediafire.com/file/w9b94a9hjgjimfy/Ibrahim_Deni_Haryanto_Resume.pdf/file">Download CV  <img style="width:18px;" src="/assets/images/download2.png"
-                                        alt=""></a>
+                                <a class="btn rounded-5 bg-dark text-white px-4 btn-sm fw-semibold"
+                                    href="https://wa.me/6283838787866">Contact</a>
+                                <a class="btn btn-sm fw-semibold"
+                                    href="https://www.mediafire.com/file/w9b94a9hjgjimfy/Ibrahim_Deni_Haryanto_Resume.pdf/file">Download
+                                    CV <img style="width:18px;" src="/assets/images/download2.png" alt=""></a>
                             </div>
                             <div style="cursor:pointer;">
                                 <i class="px-3 fa-brands fa-linkedin-in fa-xl"></i>
@@ -77,7 +85,8 @@
                     </div>
                     <div class="col mt-3 lh-1">
                         <p class="fw-bolder fs-5">Ibrahim Deni Haryanto</p>
-                        <p class="text-secondary" style="margin-top: -10px; font-size: 17px;"><small class="text-muted">Fullstack Developer</small></p>
+                        <p class="text-secondary" style="margin-top: -10px; font-size: 17px;"><small
+                                class="text-muted fw-semibold">Fullstack Developer</small></p>
                     </div>
                 </div>
             </div>
@@ -87,61 +96,72 @@
     <section class="bg-light">
         <div class="pt-5">
             <h2 class="text-center fw-bolder">MY PROJECT</h2>
-            <div class="my-5 row">
-                <div class="card m-5 col gx-0" style="width: 18rem;">
+            <div class="my-5 row justify-content-center">
+                <div class="border border-3 rounded-2 shadow mx-4 col-lg-3 gx-0 cb" style="height: 555px">
                     <div class="card-body">
-                        <img src="/assets/images/catto.png" class="card-img-top rounded-1 " alt="...">
-                        <h5 class="card-title mt-2 fw-bold">Project 1</h5>
-                        <p class="text-secondary" style="font-size: 17px"><small class="text-muted">Durasi : 3 bulan</small></p>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.
-                        </p>
-                        <div class="d-flex mb-3">
-                            <img src="/assets/images/playstore.png" alt="">
-                            <img src="/assets/images/android.png" alt="">
-                            <img src="/assets/images/java.png" alt="">
-                        </div>
-                        <div class="d-flex">
-                            <a href="#" class="btn btn-dark w-50 mx-1 fw-semibold">edit</a>
-                            <a href="#" class="btn btn-dark w-50 mx-1 fw-semibold">delete</a>
+                        <img src="/assets/images/catto.png" class="card-img-top rounded-top" style="object-fit: cover; height: 45%; width: 100%;" alt="...">
+                        <div class="px-1 pb-2">
+                            <h5 class="card-title mt-2 fw-bold">Project 1</h5>
+                            <p class="text-secondary" style="font-size: 17px"><small class="text-muted fw-semibold">Durasi : 3
+                                    bulan</small></p>
+                            <p class="card-text fw-semibold" style="font-size: 18px">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <div class="d-flex mb-3">
+                                <img class="me-4" src="/assets/images/reactjs.png" alt="">
+                                <img class="me-4" src="/assets/images/nextjs.png" alt="">
+                                <img class="me-4" src="/assets/images/nodejs.png" alt="">
+                                <img class="me-4" src="/assets/images/java.png" alt="">
+                            </div>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-dark w-50 me-1 fw-semibold">edit</a>
+                                <a href="#" class="btn btn-dark w-50 fw-semibold">delete</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-5 col gx-0" style="width: 18rem;">
+
+                <div class="border border-3 rounded-2 shadow mx-4 col-lg-3 gx-0 cb" style="height: 555px">
                     <div class="card-body">
-                        <img src="/assets/images/catto.png" class="card-img-top rounded-1 " alt="...">
-                        <h5 class="card-title mt-2 fw-bold">Project 1</h5>
-                        <p class="text-secondary" style="font-size: 17px"><small class="text-muted">Durasi : 3 bulan</small></p>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.
-                        </p>
-                        <div class="d-flex mb-3">
-                            <img src="/assets/images/playstore.png" alt="">
-                            <img src="/assets/images/android.png" alt="">
-                            <img src="/assets/images/java.png" alt="">
-                        </div>
-                        <div class="d-flex">
-                            <a href="#" class="btn btn-dark w-50 mx-1 fw-semibold">edit</a>
-                            <a href="#" class="btn btn-dark w-50 mx-1 fw-semibold">delete</a>
+                        <img src="/assets/images/catto.png" class="card-img-top rounded-top" style="object-fit: cover; height: 45%; width: 100%;" alt="...">
+                        <div class="px-1 pb-2">
+                            <h5 class="card-title mt-2 fw-bold">Project 2</h5>
+                            <p class="text-secondary" style="font-size: 17px"><small class="text-muted fw-semibold">Durasi : 3
+                                    bulan</small></p>
+                            <p class="card-text fw-semibold" style="font-size: 18px">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <div class="d-flex mb-3">
+                                <img class="me-4" src="/assets/images/reactjs.png" alt="">
+                                <img class="me-4" src="/assets/images/nextjs.png" alt="">
+                                <img class="me-4" src="/assets/images/nodejs.png" alt="">
+                                <img class="me-4" src="/assets/images/java.png" alt="">
+                            </div>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-dark w-50 me-1 fw-semibold">edit</a>
+                                <a href="#" class="btn btn-dark w-50 fw-semibold">delete</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card m-5 col gx-0" style="width: 18rem;">
+
+                <div class="border border-3 rounded-2 shadow mx-4 col-sm-3 gx-0 cb" style="height: 555px">
                     <div class="card-body">
-                        <img src="/assets/images/catto.png" class="card-img-top rounded-1 " alt="...">
-                        <h5 class="card-title mt-2 fw-bold">Project 1</h5>
-                        <p class="text-secondary" style="font-size: 17px"><small class="text-muted">Durasi : 3 bulan</small></p>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.
-                        </p>
-                        <div class="d-flex mb-3">
-                            <img src="/assets/images/playstore.png" alt="">
-                            <img src="/assets/images/android.png" alt="">
-                            <img src="/assets/images/java.png" alt="">
-                        </div>
-                        <div class="d-flex">
-                            <a href="#" class="btn btn-dark w-50 mx-1 fw-semibold">edit</a>
-                            <a href="#" class="btn btn-dark w-50 mx-1 fw-semibold">delete</a>
+                        <img src="/assets/images/catto.png" class="card-img-top rounded-top" style="object-fit: cover; height: 45%; width: 100%;" alt="...">
+                        <div class="px-1 pb-2">
+                            <h5 class="card-title mt-2 fw-bold">Project 3</h5>
+                            <p class="text-secondary" style="font-size: 17px"><small class="text-muted fw-semibold">Durasi : 3
+                                    bulan</small></p>
+                            <p class="card-text fw-semibold" style="font-size: 18px">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <div class="d-flex mb-3">
+                                <img class="me-4" src="/assets/images/reactjs.png" alt="">
+                                <img class="me-4" src="/assets/images/nextjs.png" alt="">
+                                <img class="me-4" src="/assets/images/nodejs.png" alt="">
+                                <img class="me-4" src="/assets/images/java.png" alt="">
+                            </div>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-dark w-50 me-1 fw-semibold">edit</a>
+                                <a href="#" class="btn btn-dark w-50 fw-semibold">delete</a>
+                            </div>
                         </div>
                     </div>
                 </div>
